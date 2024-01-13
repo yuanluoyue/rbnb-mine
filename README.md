@@ -2,5 +2,6 @@
 
 空气项目
 
-生成钱包 -> 运行
-可以用 pm2 多进程运行
+```npm i pm2 -g```
+```npm run gen-wallet```
+```npm run start```
