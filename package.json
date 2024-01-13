@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "5.7.2",
+    "fast-csv": "^5.0.0",
+    "node-fetch": "2.7.0",
+    "bip39": "^3.0.4"
+  }
 }
