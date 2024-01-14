@@ -21,6 +21,12 @@ const main = async () => {
   const walletData = []
   const filePath = 'wallets.csv'
 
+  const isExist = fs.existsSync(filePath)
+
+  if (isExist) {
+    throw Error('文件已存在，请先备份并删除')
+  }
+
   for (let i = 0; i < genCount; i++) {
     const w = genWallet()
     walletData.push(w)
