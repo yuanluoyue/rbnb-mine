@@ -52,7 +52,6 @@ const initWallet = async () => {
       .on('data', row => {
         wallets.push({
           address: row['地址'],
-          privateKey: row['私钥'],
         })
       })
       .on('end', () => resolve(wallets))

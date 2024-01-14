@@ -43,16 +43,26 @@ const getBalance = async address => {
     credentials: 'omit',
   })
   const r = await res.json()
-  console.log(r)
+  console.log(r.address, r.balance)
+  return r.balance
 }
 
 const main = async () => {
+  let count = 0
   const wallets = await initWallet()
 
   for (const w of wallets) {
-    const balance = await getBalance(w.address)
+    try {
+      const balance = await getBalance(w.address)
+      count += balance
+    } catch (err) {
+      console.log('请求失败')
+    }
+
     await sleepMS(1000)
   }
+
+  console.log('总量：', count)
 }
 
 main()
