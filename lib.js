@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
 const postResultData = async body => {
-  const res = await fetch('https://ec2-18-217-135-255.us-east-2.compute.amazonaws.com/validate', {
+  const res = await fetch('https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/validate', {
     headers: {
       accept: 'application/json, text/plain, */*',
       'accept-language': 'zh-CN,zh;q=0.9',

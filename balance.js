@@ -23,7 +23,7 @@ const initWallet = async () => {
 }
 
 const getBalance = async address => {
-  const url = `https://ec2-18-217-135-255.us-east-2.compute.amazonaws.com/balance?address=${address}`
+  const url = `https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address=${address}`
   const res = await fetch(url, {
     headers: {
       accept: 'application/json, text/plain, */*',
