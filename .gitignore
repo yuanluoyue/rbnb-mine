@@ -1,3 +1,4 @@
 config.js
 wallets.csv
 node_modules
+hashCache.json
