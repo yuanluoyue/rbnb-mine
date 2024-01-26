@@ -2,8 +2,8 @@ const fetch = require('node-fetch')
 const csv = require('fast-csv')
 const fs = require('fs')
 
-const { sleepMS } = require('./lib')
-const { walletTablePath } = require('./config')
+const { sleepMS } = require('../lib')
+const { walletTablePath } = require('../config')
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
