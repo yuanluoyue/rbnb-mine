@@ -3,7 +3,7 @@ const csv = require('fast-csv')
 const fs = require('fs')
 const { ethers } = require('ethers')
 
-const { difficulty, walletTablePath, tick } = require('./config')
+const { difficulty, walletTablePath, tick } = require('../config')
 const { getRandomInt, sleepMS } = require('./lib')
 
 const PORT = 3000

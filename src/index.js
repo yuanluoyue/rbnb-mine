@@ -2,7 +2,7 @@ const { ethers } = require('ethers')
 const csv = require('fast-csv')
 const fs = require('fs')
 
-const { difficulty, walletTablePath, tick } = require('./config')
+const { difficulty, walletTablePath, tick } = require('../config')
 const { postResultData, getRandomInt, sleepMS } = require('./lib')
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
@@ -60,6 +60,7 @@ const initWallet = async () => {
 
 async function main() {
   const wallets = await initWallet()
+
   try {
     while (true) {
       const index = getRandomInt(0, wallets.length - 1)

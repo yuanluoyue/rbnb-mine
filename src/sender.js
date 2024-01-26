@@ -2,7 +2,7 @@ const net = require('net')
 const { ethers } = require('ethers')
 
 const { postResultData, sleepMS } = require('./lib')
-const { difficulty, tick } = require('./config')
+const { difficulty, tick } = require('../config')
 
 const PORT = 3000
 
